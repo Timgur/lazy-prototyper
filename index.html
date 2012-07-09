@@ -17,26 +17,58 @@
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
-
+		<h1>Lazy Prototyper</h1>
   </header>
   <div role="main">
-
+  	<form>
+  		<h2>Grid Width</h2>
+  		<input type="radio" name="width" value="960" /> 960px <br />
+  		<input type="radio" name="width" value="1140" /> 1140px <br />
+			<input type="submit" value="create grid" />
+  	</form>
   </div>
+  <div class='item'></div>
+  <div class='container L960'>
+  	<div class='row first'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row'></div>
+  	<div class='row last1140'></div>
+  	<div class='row hide'></div>
+  	<div class='row hide'></div>
+  	<div class='row hide'></div>
+  	<div class='row hide last960'></div>
+  </div>
+  
+  
   <footer>
 
   </footer>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
   <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
   <script src="assets/js/libs/jquery-ui.min.js"></script>
-
-  <script>
+	<script src="assets/js/Main.js"></script>
+	<script>
+	$(function(){
+		$('.item').draggable({snap: '.row', snapMode: 'inner'});
+		$('.item').resizable({ grid: 60 });
+	});
+	</script>
+  <!--<script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  </script>-->
 </body>
 </html>

@@ -101,3 +101,76 @@ td { vertical-align: top; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+.row {
+	opacity: .4;
+	float: left;
+	height: 100%;
+	background-color: #5bd698;
+}
+
+.L1140 .first {
+	margin-left: 20px;
+}
+
+.L1140 {
+	width: 1140px;
+	height: 1200px;
+}
+
+.L1140 .row {
+	width: 55px;
+	margin-right: 40px;
+}
+
+.L1140 .row.hide {
+	display: none;
+}
+
+.L1140 .row.last1140 {
+	margin-right: 20px;
+}
+
+.L960 {
+	width: 960px;
+	height: 1200px;
+}
+
+.last960 {
+	margin-right: 20px;
+}
+
+.L960 .first {
+	margin-left: 7px;
+}
+
+.L960 .row.last960 {
+	margin-right: 7px;
+}
+
+
+.L960 .row {
+	width: 45px;
+	margin-right: 15px;
+}
+
+.item {
+	width: 165px;
+	height: 200px;
+	display: block;
+	background-color: #ccc;
+	z-index: 100;
+	opacity: .9;
+	position: absolute;
+}
+
+.ui-resizable-se {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    cursor: se-resize;
+}
+

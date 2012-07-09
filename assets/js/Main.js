@@ -5,8 +5,8 @@
 
 var Main = new Object();
 
-Main.prototype.init = function() {
-	Console.log('hi');
+Main.init = function() {
+	console.log('hi');
 }
 
 Main.init();
