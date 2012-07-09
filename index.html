@@ -60,7 +60,7 @@
 	<script src="assets/js/Main.js"></script>
 	<script>
 	$(function(){
-		$('.item').draggable({snap: '.row', snapMode: 'inner'});
+		$('.item').draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
 		$('.item').resizable({ grid: 60 });
 	});
 	</script>
