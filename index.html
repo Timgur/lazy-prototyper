@@ -22,13 +22,12 @@
   <div role="main">
   	<form>
   		<h2>Grid Width</h2>
-  		<input type="radio" name="width" value="960" /> 960px <br />
-  		<input type="radio" name="width" value="1140" /> 1140px <br />
+  		<input type="radio" checked name="width" value="960" /> 960px fixed <br />
+  		<input type="radio" name="width" value="1140" /> 1140px fluid <br />
 			<input type="submit" value="create grid" />
   	</form>
   </div>
-  <div class='item'></div>
-  <div class='container L960'>
+  <div class='container'>
   	<div class='row first'></div>
   	<div class='row'></div>
   	<div class='row'></div>
@@ -45,6 +44,8 @@
   	<div class='row hide'></div>
   	<div class='row hide'></div>
   	<div class='row hide last960'></div>
+  	<div id="item-wrapper">
+  	</div>
   </div>
   
   
@@ -57,11 +58,14 @@
   <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
   <script src="assets/js/libs/jquery-ui.min.js"></script>
+  <script src="assets/js/Class.js"></script>
+  <script src="assets/js/BoxItem.js"></script>
 	<script src="assets/js/Main.js"></script>
 	<script>
 	$(function(){
-		$('.item').draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
-		$('.item').resizable({ grid: 60 });
+		$('.container').addClass('L' + window.location.search.substr(window.location.search.lastIndexOf('=')+1));
+	//	$('.L960 .item').resizable({ grid: 60 }).draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
+		$('.L1140 .item').resizable({ grid: 95 }).draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
 	});
 	</script>
   <!--<script>

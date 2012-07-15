@@ -110,17 +110,18 @@ td { vertical-align: top; }
 }
 
 .L1140 .first {
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 .L1140 {
 	width: 1140px;
 	height: 1200px;
+	margin: 0 auto;
 }
 
 .L1140 .row {
-	width: 55px;
-	margin-right: 40px;
+	width: 60px;
+	margin-right: 35px;
 }
 
 .L1140 .row.hide {
@@ -128,12 +129,13 @@ td { vertical-align: top; }
 }
 
 .L1140 .row.last1140 {
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 .L960 {
 	width: 960px;
 	height: 1200px;
+	margin: 0 auto;
 }
 
 .last960 {
@@ -155,13 +157,25 @@ td { vertical-align: top; }
 }
 
 .item {
-	width: 165px;
-	height: 200px;
 	display: block;
 	background-color: #ccc;
 	z-index: 100;
 	opacity: .9;
-	position: absolute;
+	position: relative;
+}
+
+.L960 .item {
+	width: 165px;
+	height: 200px;
+	margin-left: 7px;
+	max-width: 945px;
+}
+
+.L1140 .item {
+	width: 155px;
+	height: 200px;
+	margin-left: 10px;
+	max-width: 1105px;
 }
 
 .ui-resizable-se {

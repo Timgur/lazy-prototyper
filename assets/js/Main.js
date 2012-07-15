@@ -6,8 +6,9 @@
 var Main = new Object();
 
 Main.init = function() {
-	console.log('hi');
+	var item = new BoxItem();
 }
+
 
 Main.init();
 
