@@ -17,6 +17,9 @@ var BoxItem = Class.extend({
 		this.el = document.createElement('div');
 		self.el.className = self.elements.itemClass;
 		self.elements.itemContainer.append(self.el);
+	  self.el.style.top = 0;
+	  self.el.style.left = 0;
+	  self.el.style.position = "absolute";
 		$(self.el).resizable({ grid: 60 }).draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
 	},
 	

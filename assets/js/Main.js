@@ -6,7 +6,12 @@
 var Main = new Object();
 
 Main.init = function() {
-	var item = new BoxItem();
+	
+	$('.addBox').click(function(){
+		var item = new BoxItem();
+		return false;
+	});
+	
 }
 
 

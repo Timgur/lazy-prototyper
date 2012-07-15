@@ -26,6 +26,7 @@
   		<input type="radio" name="width" value="1140" /> 1140px fluid <br />
 			<input type="submit" value="create grid" />
   	</form>
+  	<input type="submit" value="add box" class='addBox' />
   </div>
   <div class='container'>
   	<div class='row first'></div>
@@ -65,7 +66,7 @@
 	$(function(){
 		$('.container').addClass('L' + window.location.search.substr(window.location.search.lastIndexOf('=')+1));
 	//	$('.L960 .item').resizable({ grid: 60 }).draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
-		$('.L1140 .item').resizable({ grid: 95 }).draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
+	//	$('.L1140 .item').resizable({ grid: 95 }).draggable({snap: '.row', snapMode: 'inner', containment: ".container"});
 	});
 	</script>
   <!--<script>

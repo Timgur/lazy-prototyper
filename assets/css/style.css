@@ -102,6 +102,10 @@ td { vertical-align: top; }
   h2, h3 { page-break-after: avoid; }
 }
 
+.container {
+	position: relative;
+}
+
 .row {
 	opacity: .4;
 	float: left;
