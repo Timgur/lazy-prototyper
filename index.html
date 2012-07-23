@@ -64,7 +64,10 @@
 	<script src="assets/js/Main.js"></script>
 	<script>
 	$(function(){
-		$('.container').addClass('L' + window.location.search.substr(window.location.search.lastIndexOf('=')+1));
+		if (window.location.search != '') {
+			$('.container').addClass('L' + window.location.search.substr(window.location.search.lastIndexOf('=')+1));
+			$('form').hide();
+		}
 	});
 	</script>
 </body>
